@@ -33,7 +33,6 @@ while True:
     message = input('Please type a word ')
     if message == 'stop' or message == '':
         newfile.close()  # Закрываем файл
-        client_sock.close()
         break
 
 
