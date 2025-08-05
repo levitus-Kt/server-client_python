@@ -15,7 +15,6 @@ serv_addr: tuple = (hostname, port)
 # Получаем файл для запроса с сервера
 if sys.argv[1]: file_from_server: str = os.path.basename(sys.argv[1])
 # Отправляем данные серверу
-# sock.sendto(b"GET_FILE", (host, port))
 data: bytes = file_from_server.encode()
 client_sock.sendto(data, serv_addr)
 
